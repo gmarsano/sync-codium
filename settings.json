@@ -1,0 +1,135 @@
+{
+  "git.ignoreMissingGitWarning": true,
+  "editor.fontFamily": "'Fira Code', 'Operator Mono'",
+  "editor.fontLigatures": "'ss02', 'ss03', 'ss05', 'ss06'",
+  "editor.lineHeight": 22,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 4,
+  "editor.wordWrap": "on",
+  "editor.rulers": [80],
+  "terminal.integrated.rendererType": "canvas",
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff404042",
+    "editorCursor.foreground": "#00aaff"
+  },
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": true,
+  "extensions.ignoreRecommendations": false,
+  "window.openFoldersInNewWindow": "on",
+  "files.autoGuessEncoding": false,
+
+  "indenticator.inner.showHighlight": true,
+  "indenticator.width": 2,
+  "indenticator.hover.peekBack": 1,
+  "indenticator.color.dark": "#E66",
+  "indenticator.color.light": "#F66",
+  "indenticator.inner.color.light": "#66F",
+  "indenticator.inner.color.dark": "#66E",
+
+  "sync.forceUpload": false,
+
+  "C_Cpp.updateChannel": "Insiders",
+  
+  "markdown-pdf.executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+  "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm;\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; display: none; \"> <span class='date'></span></div>",
+
+  // start bash, not the mintty, or you'll get a new window
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  // Use this to keep bash from doing a 'cd ${HOME}'
+ /*  "terminal.integrated.env.windows": {
+    "CHERE_INVOKING": "1"
+  }, */
+  // Make it a login shell
+  "terminal.integrated.shellArgs.windows": [
+    "-l"
+  ],
+  // end
+
+  // Shell cywin64 login
+  "shellLauncher.shells.windows": [
+    {
+      "shell": "C:/cygwin64/bin/bash.exe",
+      "args": ["-l"],
+      "env": {"CHERE_INVOKING": "1"},
+      "label": "cywin bash"
+    },
+    {
+      "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["-l"],
+      // "env": {"CHERE_INVOKING": "1"},
+      "label": "git bash"
+    },
+    {
+      "shell": "C:\\Windows\\System32\\cmd.exe",
+      "label": "cmd"
+    }
+  ],
+
+  // python
+  "[python]": {
+    "editor.tabSize": 4,
+  },
+  // pylint
+  "python.linting.pylintArgs": [
+    "--max-line-length=79",
+    "--load-plugin","pylint_protobuf"
+  ],
+  // "python.linting.pycodestyleArgs": [
+  // ],
+  // autopep8
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": [
+    "--max-line-length", "79",
+    "-a", "-a"
+  ],
+
+  // // vsc-prolog
+  // "prolog.executablePath": "C:/Program Files/swipl/bin/swipl.exe",
+  // "prolog.format.tabSize": 2,
+  
+  // // php cs fixer (formatter)
+  // "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
+  // "php-cs-fixer.executablePathWindows": "",   //eg: php-cs-fixer.bat
+  // "php-cs-fixer.lastDownload": 1586257899392,
+  // "php-cs-fixer.onsave": false,
+  // "php-cs-fixer.rules": "@PSR2",
+  // // "php-cs-fixer.config": ".php_cs;.php_cs.dist",
+  // "php-cs-fixer.config": "C:\\Users\\Gaston\\AppData\\Roaming\\Visual Studio Code\\config\\php-cs-fixer.php_cs",
+  // "php-cs-fixer.allowRisky": false,
+  // "php-cs-fixer.pathMode": "override",
+  // "php-cs-fixer.exclude": [],
+  // "php-cs-fixer.autoFixByBracket": true,
+  // "php-cs-fixer.autoFixBySemicolon": false,
+  // "php-cs-fixer.formatHtml": true,
+  // "php-cs-fixer.documentFormattingProvider": true,
+  // // end php cs fixer
+
+  // markdown-math
+  "mdmath.delimiters": "gitlab",
+  // end math
+  // // power mode
+  // "powermode.enabled": true,
+  // "powermode.presets": "particles",
+  // "powermode.enableStatusBarComboCounter": false,
+  // "powermode.shakeIntensity": 2,
+  // "powermode.enableStatusBarComboTimer": false,
+  // // end power mode
+  "diffEditor.ignoreTrimWhitespace": false,
+  "search.useIgnoreFiles": false,
+
+  // PHP
+  "files.associations": {
+    "*.module": "php"
+  },
+  "intelephense.environment.phpVersion": "7.2.1",
+
+  // Use the native titlebar
+  // "window.titleBarStyle": "native",
+  "workbench.colorTheme": "Deepdark Material Theme | Default Version",
+  "diffEditor.maxComputationTime": 0,
+  "todo-tree.tree.showScanModeButton": false,
+  "workbench.settings.openDefaultKeybindings": false,
+  "explorer.confirmDelete": false,
+  "sync.gist": "63292dd24441e1e90411e788b1d96f9e"
+}

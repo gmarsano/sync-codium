@@ -1,0 +1,63 @@
+// Place your key bindings in this file to override the defaults
+[
+  // back quote snippet
+  {
+    "key": "ctrl+shift+-",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "`${0:quote}`"
+    }
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorHasSelection",
+    "args": {
+      "snippet": "`${0:$TM_SELECTED_TEXT}`"
+    }
+  },
+  // end back quote snippet
+
+  // terminal focus
+  { "key": "ctrl+alt+k", "command": "workbench.action.terminal.focusNext" },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  // end terminal focus
+  // Reindent
+  {
+    "key": "ctrl+alt+r",
+    "command": "editor.action.reindentselectedlines"
+  },
+  // Run Python script
+  {
+    "key": "ctrl+alt+p",
+    "command": "python.execInTerminal"
+  },
+  // block comment
+  {
+    "key": "ctrl+shift+oem_2",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // end block comment
+  // Multiples tipos de shell
+  {
+    "key": "ctrl+shift+t",
+    "command": "shellLauncher.launch"
+  },
+  // Toggle between terminal and editor focus
+  { "key": "ctrl+alt+`", "command": "workbench.action.terminal.focus"},
+  { "key": "ctrl+alt+`", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"},
+
+  /* OTROS */
+  { "key": "ctrl+alt+k", "command": "workbench.action.terminal.kill", "when": "terminalFocus"},
+  { "key": "ctrl+k ctrl+shift+r", "command": "workbench.action.reloadWindow"}
+]
